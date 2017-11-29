@@ -2,15 +2,15 @@
 Given a file containing a list of URLs that point to images, find the average color in each one
 
 ## Build Instructions
-Build the executable:
+Build the executable and run the unit tests:
 
-``
-[colorfinder] mvn clean package -DskipTests=true
-``
+```
+[colorfinder] mvn clean package
+```
 
 Example output:
 
-``
+```
 master  ✭
 [INFO] Scanning for projects...
 [WARNING]
@@ -64,15 +64,15 @@ master  ✭
 [INFO] Finished at: 2017-11-28T19:30:52-08:00
 [INFO] Final Memory: 21M/307M
 [INFO] ------------------------------------------------------------------------
-``
+```
 
 ## Run Instructions
 After building the executable, the jar will run the main method of ColorFinder and generate the output file.
 
-``
+```
 [colorfinder] java -jar target/colorfinder-1.0-SNAPSHOT.jar
-``
+```
 
 ## Output file
 
-Output file is called colors.csv and is in the format url;color;color;color
+Output file is called colors.csv and is in the format `url;color;color;color`
